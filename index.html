@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Income Calculator</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="box">
+        <form id="incomeForm">
+            
+            <label for="gross_income">Enter gross annual income</label>
+            <input type="number" id="gross_income" placeholder="Enter gross annual income" name="gross_income" required>
+
+            <label for="extra_income">Enter extra income</label>
+            <input type="number" id="extra_income" placeholder="Enter extra income from other sources" name="extra_income" required>
+
+            <label for="age_group">Enter age group</label>
+            <select id="age_group" name="age_group" required>
+                <option value="">Select Age Group</option>
+                <option value="bellow 40"> bellow 40 </option>
+                <option value="40-59">40-59</option>
+                <option value="above 60"> above 60</option>
+            </select>
+
+            <label for="deduction">Enter total applicable deductions</label>
+            <input type="number" id="deduction" placeholder="Add total applicable deductions" name="deduction" required>
+
+            <input type="submit" value="Submit" id="btn">
+
+             <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p id="modalText"><div id="taxResult"></div></p>
+                    <button type="button" class="close" id="button">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
