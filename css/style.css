@@ -15,11 +15,6 @@ body{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.box h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .box label {
   display: block;
   margin-bottom: 10px;
@@ -66,7 +61,7 @@ body{
   background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content/Box */
+/* Modal Box */
 .modal-content {
   background-color: #fefefe;
   margin: 10% auto; 
